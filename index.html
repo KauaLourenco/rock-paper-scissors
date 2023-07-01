@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <header>
+        <p class="title">Rock Paper Scissors</p>
+        <img class="history-list" src="images/list.png" alt="List symbol" title="See history">
+        <img class="theme" src="images/moon.png" alt="Sun/Moon symbol" title="Change theme">
+    </header>
+    <main>
+        <div class="dinamic-text">
+            <h1 class="scoreboard">What do you choose?</h1>
+            <p class="result">Score 5 points to win</p>
+            <button class="play-again">Play again</button>
+        </div>
+
+        <div class="hands">
+            <div class="player-side">
+                <img src="images/like-hand.png" alt="Player hand">
+                <p>Player</p>
+            </div>
+            <div class="cpu-side">
+                <img src="images/like-hand.png" alt="Cpu hand">
+                <p>CPU</p>
+            </div>
+        </div>
+
+        <div class="options">
+            <button class="option rock" title="Rock">
+                <img src="images/rock.png" alt="Rock options">
+            </button>
+            <button class="option paper" title="Paper">
+                <img src="images/paper.png" alt="Paper option">
+            </button>
+            <button class="option scissors" title="Scissors">
+                <img src="images/scissors.png" alt="Scissors option">
+            </button>
+        </div>
+    </main>
+    <section>
+        <h2>History</h2>
+        <button class="close-btn" title="Close">
+            <span></span>
+            <span></span>
+        </button>
+        <p class="round-history">Round 1</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
