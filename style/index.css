@@ -17,6 +17,7 @@ body {
     color: var(--font-color);
 
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 :root {
@@ -54,9 +55,16 @@ header {
 }
 
 header img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
     margin: 0 1rem;
+    padding: .5rem;
+
+    border-radius: 50%;
+    transition: all .2s ease-in;
+}
+header img:hover {
+    background-color: var(--hover-btn-color);
 }
 
 /* main */
@@ -113,6 +121,7 @@ main {
     background-color: var(--btn-color);
     border: none;
     border-radius: 2rem;
+    transition: all .2s ease-in;
 }
 .option:hover,
 .play-again:hover {
@@ -123,7 +132,7 @@ main {
 }
 
 .play-again {
-    padding: .5rem 1rem;
+    padding: .5rem 1.5rem;
 
     font-size: 2rem;
     color: var(--font-color);
@@ -138,9 +147,10 @@ section {
     padding: var(--main-padding);
     position: absolute;
     top: var(--header-height);
+    right: -100%;
 
     background-color: var(--section-bg-color);
-    display: none;
+    transition: all .7s ease;
 }
 
 .close-btn {
@@ -175,7 +185,7 @@ section {
     transform: rotate(-45deg) translate(-50% , -50%);
 }
 
-.round-history {
+.matches {
     padding: 2rem 0;
     font-size: 2rem;
     border-bottom: 1px solid var(--font-color);
