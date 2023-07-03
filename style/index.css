@@ -17,15 +17,13 @@ body {
     color: var(--font-color);
 
     background-color: var(--bg-color);
-    overflow: hidden;
 }
 
 :root {
-    --bg-color: #222831;
-    --header-bg-color: #111720;
-    --section-bg-color: #393e46;
-    --btn-color: #393e46;
-    --hover-btn-color: #5a616b;
+    --header-bg-color: #0b111b;
+    --bg-color: #112038;
+    --btn-color: #121925;
+    --hover-btn-color: #000511;
     --font-color: #ccd6dd;
 
     --header-height: 16vh;
@@ -57,7 +55,6 @@ header {
 header img {
     width: 5rem;
     height: 5rem;
-    margin: 0 1rem;
     padding: .5rem;
 
     border-radius: 50%;
@@ -70,10 +67,8 @@ header img:hover {
 /* main */
 
 main {
-    width: 100%;
     height: calc(100% - var(--header-height));
     padding: var(--main-padding);
-    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -137,56 +132,4 @@ main {
     font-size: 2rem;
     color: var(--font-color);
     display: none;
-}
-
-/* section */
-
-section {
-    width: 100%;
-    height: calc(100% - var(--header-height));
-    padding: var(--main-padding);
-    position: absolute;
-    top: var(--header-height);
-    right: -100%;
-
-    background-color: var(--section-bg-color);
-    transition: all .7s ease;
-}
-
-.close-btn {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    top: 5rem;
-    right: 3rem;
-
-    background-color: var(--btn-color);
-    border: none;
-    border-radius: 50%;
-}
-.close-btn:hover {
-    background-color: var(--hover-btn-color);
-}
-.close-btn span {
-    width: 2rem;
-    height: .5rem;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-
-    background-color: var(--font-color);
-    display: inline-block;
-}
-.close-btn span:first-of-type {
-    transform: rotate(45deg) translate(-50% , 50%);
-    
-}
-.close-btn span:last-of-type {
-    transform: rotate(-45deg) translate(-50% , -50%);
-}
-
-.matches {
-    padding: 2rem 0;
-    font-size: 2rem;
-    border-bottom: 1px solid var(--font-color);
 }
